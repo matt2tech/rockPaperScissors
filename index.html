@@ -15,16 +15,19 @@
 </head>
 
 <body>
-    <nav class='bg-warning'>
+    <nav class='bg-warning whiteText'>
         <p>ROCK PAPER SCISSORS</p>
     </nav>
     <div class='d-flex justify-content-around'>
-        <img src='' alt='player'>
-        <div class='d-flex flex-column align-items-center'>
-            <button value='rock'>Rock</button>
-            <button value='paper'>Paper</button>
-            <button value='scissors'>Scissors</button>
+        <img id='playerHand' class='border border-warning rounded' src='images/start.jpg' alt='player'>
+        <div class='d-flex flex-column align-items-center justify-content-center'>
+            <button class='btn btn-warning m-1 whiteText' value='rock'>Rock</button>
+            <button class='btn btn-warning m-1 whiteText' value='paper'>Paper</button>
+            <button class='btn btn-warning m-1 whiteText' value='scissors'>Scissors</button>
         </div>
-        <img src='' alt='com'>
+        <img id='comHand' class='border border-warning rounded' src='images/start.jpg' alt='com'>
+    </div>
+    <div class='hide bg-warning'>
+        <p></p>
     </div>
 </body>
