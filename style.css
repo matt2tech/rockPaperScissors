@@ -1,0 +1,7 @@
+#comHand {
+    transform: scaleX(-1);
+}
+
+.whiteText {
+    color: white !important;
+}
