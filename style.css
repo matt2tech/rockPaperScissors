@@ -5,3 +5,14 @@
 .whiteText {
     color: white !important;
 }
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    #playerHand {
+        width: 100% !important;
+        height: 100% !important;
+    }
+    #comHand {
+        width: 100% !important;
+        height: 100% !important;
+    }
+}
