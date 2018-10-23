@@ -1,10 +1,10 @@
 function rockPaperScissors(hand) {
     playerHand(hand);
     com = computerHand();
-    if (hand === com) {
-        document.getElementById('winnerCircle').innerHTML = 'Tie!';
-    } else if ((hand === 'rock' && com === 'scissors') || (hand === 'paper' && com === 'rock') || (hand === 'scissors' || com === 'paper')) {
+    if ((hand === 'rock' && com === 'scissors') || (hand === 'paper' && com === 'rock') || (hand === 'scissors' && com === 'paper')) {
         document.getElementById('winnerCircle').innerHTML = 'Player Wins!';
+    } else if (hand === com) {
+        document.getElementById('winnerCircle').innerHTML = 'Tie!';
     } else {
         document.getElementById('winnerCircle').innerHTML = 'Computer Wins!';
     };
@@ -37,4 +37,5 @@ function playerHand(hand) {
         document.getElementById('playerHand').src = 'images/scissors.jpeg';
         document.getElementById('playerHand').style.transform = 'scaleX(-1)'
     };
+
 }
