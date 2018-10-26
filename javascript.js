@@ -47,12 +47,21 @@ function playerHand(hand) {
 }
 
 function winOrLose(playerHealth, comHealth) {
-    console.log('player' + playerHealth + ' com' + comHealth)
+    buttons = document.querySelectorAll('button');
     if (playerHealth < 1) {
         document.getElementById('winnerCircle').innerHTML = 'Computer has won the war';
+        buttons.forEach(function(button) {
+            button.disabled = true;
+        });
     } else if (comHealth < 1) {
         document.getElementById('winnerCircle').innerHTML = 'Player has won the war';
+        buttons.forEach(function(button) {
+            button.disabled = true;
+        });
     } else if (comHealth < 1 && playerHealth < 1) {
         document.getElementById('winnerCircle').innerHTML = "It's a draw";
+        buttons.forEach(function(button) {
+            button.disabled = true;
+        });
     };
 }
