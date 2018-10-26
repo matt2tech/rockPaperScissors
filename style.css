@@ -18,4 +18,7 @@
     #winsAndLosses {
         display: block !important;
     }
+    #winnerCircle {
+        font-size: 24px;
+    }
 }
